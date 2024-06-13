@@ -216,7 +216,7 @@ export const getOrdersController = async (req, res) => {
     });
   }
 };
-// //orders
+//orders
 export const getAllOrdersController = async (req, res) => {
   try {
     const orders = await orderModel

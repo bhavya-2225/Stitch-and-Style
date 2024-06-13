@@ -42,10 +42,10 @@ router.put("/profile", requireSignIn, updateProfileController);
 //orders
 router.get("/orders", requireSignIn, getOrdersController);
 
-// //all orders
+//all orders
 router.get("/all-orders", requireSignIn, isAdmin, getAllOrdersController);
 
-// // order status update
+// order status update
 router.put(
   "/order-status/:orderId",
   requireSignIn,

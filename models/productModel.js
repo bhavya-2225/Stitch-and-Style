@@ -6,7 +6,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    slug: {
+    slug: {      // ice cream  ice-cream
       type: String,
       required: true,
     },

@@ -22,7 +22,7 @@ export const createProductController = async (req, res) => {
     const { name, description, price, category, quantity, shipping } =
       req.fields;
     const { photo } = req.files;
-    //alidation
+    //validation
     switch (true) {
       case !name:
         return res.status(500).send({ error: "Name is Required" });
@@ -85,7 +85,7 @@ export const getProductController = async (req, res) => {
     });
   }
 };
-// // get single product
+// get single product
 export const getSingleProductController = async (req, res) => {
   try {
     const product = await productModel
@@ -208,7 +208,7 @@ export const productFiltersController = async (req, res) => {
     console.log(error);
     res.status(400).send({
       success: false,
-      message: "Error WHile Filtering Products",
+      message: "Error While Filtering Products",
       error,
     });
   }
